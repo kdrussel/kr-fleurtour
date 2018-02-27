@@ -65,6 +65,36 @@
   </li>
 </ul>
 
+<!-- Section: Slider -->
+<section class="slider">
+  <ul class="slides">
+    <li>
+      <img src="img/resort1.jpg" alt="">
+      <div class="caption center-align">
+        <h2>Welcome to New Orleans</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Knishes crawfish pies fried pickles brussel sprouts zeppoles. Scallion pancakes wontons shrimp po-boys.</h5>
+        <a href="#" class="btn btn-large amber lighten-1">Learn More</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/resort2.jpg" alt="">
+      <div class="caption left-align">
+        <h2>The City That Care Forgot</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only"> Jalapeño poppers cheese fries and gravy namak para Hubig's pies fried Snickers. Scotch eggs Philly scrapple horseradish sauce popovers.</h5>
+        <a href="#" class="btn btn-large amber lighten-1">Learn More</a>
+      </div>
+    </li>
+    <li>
+      <img src="img/resort3.jpg" alt="">
+      <div class="caption right-align">
+        <h2>Vacation in the Crescent City</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor amet activated charcoal organic four dollar toast meditation, +1 fashion axe you probably haven't heard of them man bun chicharrones DIY. Pinterest schlitz craft beer mumblecore, deep v ugh neutra wayfarers blog af. </h5>
+        <a href="#" class="btn btn-large amber lighten-1">Learn More</a>
+      </div>
+    </li>
+  </ul>
+</section>
+
 
 
 
@@ -74,7 +104,16 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
+      // Init sidenav
       $('.button-collapse').sideNav();
+
+      // Init slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
       // Custom JS & jQuery here
       
     });
