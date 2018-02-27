@@ -95,6 +95,19 @@
   </ul>
 </section>
 
+<!-- Section: Search -->
+<section class="section section-search amber darken-1 white-text center">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h3>Search for your NOLA</h3>
+        <div class="input-field">
+          <input class="white grey-text autocomplete" placeholder="Audubon Zoo, Harrah's, City Park, etc... " type="text" id="autocomplete-input">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -114,10 +127,30 @@
         transition: 500,
         interval: 6000
       });
+
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Audubon Zoo": null,
+          "Audubon Park": null,
+          "City Park": null,
+          "Aquarium of the Americas": null,
+          "St. Charles Ave": null,
+          "Harrah's Casino New Orleans": null,
+          "Bayou Sauvage National Wildlife Refuge": null,
+          "Bourbon St.": null,
+          "Canal St.": null,
+          "Mother's": null,
+          "Commander's Palace": null,
+          "Ghost tours": null,
+        }
+      });
+
       // Custom JS & jQuery here
       
     });
   </script>
+
 </body>
 
 </html>
